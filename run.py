@@ -14,7 +14,6 @@ def receive_data():
         return jsonify({'message': 'No data provided'}), 400
 
     # Process the data...
-    # This will depend on the specifics of your project.
     # For example, you might want to store the data in a database, use it to update the status of a Litterbot, etc.
     print(f'Received data: {data}')
 
@@ -29,7 +28,6 @@ def send_command():
         return jsonify({'message': 'No command provided'}), 400
 
     # Send the command to the appropriate Litterbot...
-    # This will depend on the specifics of your project.
     # For example, you might want to send the command over a network connection, use it to control a Litterbot, etc.
     print(f'Sending command: {command}')
 
@@ -39,7 +37,6 @@ def send_command():
 @app.route('/status/<int:litterbot_id>', methods=['GET'])
 def get_status(litterbot_id):
     # Get the status of the Litterbot with the given ID...
-    # This will depend on the specifics of your project.
     # For example, you might want to retrieve the status from a database, compute it based on recent data, etc.
     status = f'Status of Litterbot {litterbot_id}'
 
